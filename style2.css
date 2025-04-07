@@ -1,0 +1,293 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #ffb9c4;
+    color: white;
+    text-align: center;
+    padding: 0.2rem 0; /* Reducido aún más el padding vertical del header */
+}
+
+header {
+    background-color: #ffb9c4;
+    color: white;
+    text-align: left; /* Alinea el contenido del header a la izquierda inicialmente */
+    padding: 1rem 20px; /* Aumentado el padding vertical para un nav más grande */
+    display: flex; /* Activa flexbox para organizar los elementos internos */
+    align-items: center; /* Alinea verticalmente los elementos dentro del header */
+    justify-content: space-between; /* Espacia el logo a la izquierda y la navegación a la derecha */
+}
+
+.navbar {
+    display: flex; /* Asegura que los elementos dentro de .navbar también se distribuyan */
+    justify-content: space-between; /* Espacia el logo y la navegación */
+    align-items: center; /* Alinea verticalmente el logo y la navegación */
+    width: 100%; /* Ocupa todo el ancho del header */
+}
+
+.navbar div:first-child { /* Estilo para el contenedor del logo */
+    display: flex;
+    align-items: center;
+}
+
+.navbar div:first-child img { /* Estilo para la imagen del logo */
+    margin-right: 15px; /* Más espacio entre el logo y el texto */
+    height: 70px; /* Aumentada la altura del logo */
+    width: auto; /* Mantiene la proporción del logo */
+}
+
+.navbar div:first-child strong { /* Estilo para el texto "Tienda Infotep" */
+    font-size: 1.4rem; /* Ajustado el tamaño del texto si es necesario */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right; /* Alinea los elementos de la lista a la derecha */
+}
+
+nav li {
+    display: inline;
+    margin-left: 25px; /* Aumentado el margen izquierdo para más espacio */
+}
+
+/* Elimina el margen derecho que teníamos antes */
+nav li:not(:last-child) {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem; /* Aumentado ligeramente el tamaño de la fuente de los enlaces */
+    padding: 0.5rem 0; /* Añadido un poco de padding vertical a los enlaces */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px; /* Reducido aún más el margen derecho entre los elementos */
+}
+
+/* Corrección: aplicar margen solo a la derecha excepto el último elemento */
+nav li:not(:last-child) {
+    margin-right: 30px; /* Reducido aún más el margen derecho entre los elementos */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.Productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.producto {
+    border: 1px solid  #fd99a8;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    flex: 20px;
+    box-sizing: border-box;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+section button{
+    padding: 10px;
+    background-color: #fd99a8;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+section button:hover{
+    background-color: #fd99a8;
+}
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&display=swap&quot");
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+
+
+  
+  
+ 
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #FFC0CB;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #ffffff;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #ffffff;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+.section {
+    padding: 20px;
+    background-color: #ffb9c4;
+    margin: 20px;
+}
+
+.section h2{
+    margin: 15px;
+    color: #ffffff;
+}
+
+.section img{
+    max-width: 100%;
+    height: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    margin-bottom: 5px;
+}
+
+form input, form textarea{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+form button{
+    padding: 10px;
+    background-color: #fa96a7;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover{
+    background-color: antiquewhite;
+}
